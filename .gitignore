@@ -1,0 +1,14 @@
+# Top level gitignore
+# Ignore files from devnenv-templates projects
+# without polluting gitignore from specific templates
+# that should remain project agnostic
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Profiler output
+torch_cuda_trace.json
+
+# Lock files
+*.lock
