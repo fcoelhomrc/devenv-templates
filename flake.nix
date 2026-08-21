@@ -24,6 +24,20 @@
         };
     in
     {
+      templates.python = {
+        path = cleanTemplate {
+          path = ./python;
+          name = "python-template";
+        };
+        description = "Barebones Python development environment";
+        welcomeText = ''
+          # Python 
+            
+              devenv shell
+        '';
+      };
+
+
       templates.python-cuda = {
         path = cleanTemplate {
           path = ./python+cuda;
